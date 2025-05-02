@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-blue: #10242D;
+    --main-font-color: #E1DDC5;
+}
+
+@font-face {
+    font-family: Sophisticated;
+    src: url("/src/assets/fonts/Quintessential-Regular.ttf");
+}
+
+body{
+    background-color: var(--main-blue);
+
+}
+
+header{
+    position: absolute;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 4rem;
+    
+}
+
+header nav button{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    font-family: Sophisticated;
+    color: var(--main-font-color);
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+header nav button:hover{
+    border-bottom: 2px solid var(--main-font-color);
+}
+
+
+
+
+#homepage{
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src//assets/images/pexels-cottonbro-3296587.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-clip: border-box;
+}
+
+#homepage>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#homepage #logoTitle{
+    font-family: Sophisticated;
+    color: var(--main-font-color);
+}
+
+#homepage #logoImg{
+    width: 4rem;
+
+}
+
+#aboutPage{
+    font-family: Sophisticated;
+    color: var(--main-font-color);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutPage>div{
+    position: relative;
+}
+
+#aboutPage h1{
+    font-size: 4rem;
+
+}
+#aboutPage p{
+    width: 30rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#aboutPage img{
+    width: 20rem;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    z-index: -1;
+}
